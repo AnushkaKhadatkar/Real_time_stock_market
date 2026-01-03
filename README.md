@@ -7,7 +7,7 @@
 
 An end-to-end real-time data engineering pipeline built with the Modern Data Stack. This project captures live stock market data from Finnhub API, streams it through Kafka, transforms it in Snowflake using DBT, and delivers analytics via Power BI dashboards.
 
-🏗️ ## Architecture
+## 🏗️ Architecture
 
 ![Architecture](Architecture.png)
 
@@ -20,7 +20,7 @@ The pipeline implements a medallion architecture (Bronze → Silver → Gold) wi
 5. **Transformation**: DBT transforms data across Bronze, Silver, and Gold layers in Snowflake
 6. **Visualization**: Power BI connects to Gold layer for interactive dashboards
 
-🧰 ## Tech Stack
+## 🧰 Tech Stack
 
 - **Data Source**: Finnhub API (live stock market data)
 - **Streaming**: Apache Kafka + Zookeeper
@@ -32,7 +32,7 @@ The pipeline implements a medallion architecture (Bronze → Silver → Gold) wi
 - **Language**: Python 3.8+
 - **Deployment**: Docker + Docker Compose
 
-🧠 ## Features
+## 🧠 Features
 
 - ✅ Real-time stock market data streaming (not simulated)
 - ✅ Fault-tolerant message processing with Kafka
@@ -43,7 +43,7 @@ The pipeline implements a medallion architecture (Bronze → Silver → Gold) wi
 - ✅ Fully containerized architecture with Docker
 - ✅ Scalable design with horizontal scaling capabilities
 
-📂 ## Project Structure
+## 📂 Project Structure
 
 ```
 real-time-stocks-pipeline/
@@ -63,7 +63,7 @@ real-time-stocks-pipeline/
 └── requirements.txt
 ```
 
-🚀 ## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -91,13 +91,13 @@ real-time-stocks-pipeline/
 4. **Run DBT**: Execute `dbt run` to create Bronze, Silver, and Gold tables
 5. **Connect Power BI**: Link to Snowflake Gold layer and build dashboards
 
-🪙 ## Data Layers
+## 🪙 Data Layers
 
-- 🥉 **Bronze**: Raw data as ingested from Kafka/MinIO
-- 🥈 **Silver**: Cleaned, validated, and deduplicated data
-- 🥇 **Gold**: Analytics-ready models (candlestick, KPIs, treechart)
+- **🥉 Bronze**: Raw data as ingested from Kafka/MinIO
+- **🥈 Silver**: Cleaned, validated, and deduplicated data
+- **🥇 Gold**: Analytics-ready models (candlestick, KPIs, treechart)
 
-🔌 ## Docker Services
+## 🔌 Docker Services
 
 | Service | Port | Description |
 |---------|------|-------------|
@@ -107,7 +107,7 @@ real-time-stocks-pipeline/
 | Airflow | 8080 | Workflow UI |
 | PostgreSQL | 5432 | Airflow metadata |
 
-🧑‍💻 ## Author
+## 🧑‍💻 Author
 
 **Anushka Khadatkar**
 
